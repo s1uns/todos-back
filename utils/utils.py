@@ -1,4 +1,4 @@
-from ..models.todos import ToDo
+from models.todos import ToDo
 
 async def validate_model(model: ToDo):
 

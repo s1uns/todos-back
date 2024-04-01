@@ -1,9 +1,9 @@
 import json
 from fastapi import APIRouter, Response, status
-from ..models.todos import EditTodo, ToDo
-from ..config.database import todo_collection
-from ..schema.schemas import list_serial
-from ..utils.utils import validate_model, InvalidPriorityException, InvalidToDoNameException
+from models.todos import EditTodo, ToDo
+from config.database import todo_collection
+from schema.schemas import list_serial
+from utils.utils import validate_model, InvalidPriorityException, InvalidToDoNameException
 from bson import ObjectId
 
 router = APIRouter()
