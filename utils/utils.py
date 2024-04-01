@@ -2,6 +2,7 @@ from models.todos import ToDo
 
 async def validate_model(model: ToDo):
 
+    model.name = model.name.strip()
 
     if len(model.name) < 5 or len(model.name) > 50:
         raise InvalidToDoNameException("the title of the task should be between 5 and 50 characters long.")
